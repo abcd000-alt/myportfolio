@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+    cursor: url('bug (1).png'), auto;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    height:100vh;
+    width: 100%;
+    background: #1D2228;
+}
+
+section{
+    padding:32px 9% 20px;
+}
+
+
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1D2228;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+nav #toggler{
+    display: none;
+}
+
+nav .fa-bars{
+    font-size: 17px;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .3rem 1rem;
+    cursor: pointer;
+    border: .1rem solid rgba(255,255,255,.3);
+    display: none;
+
+}
+nav .fa-times{
+    font-size: 17px;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .3rem 1rem;
+    cursor: pointer;
+    border: .1rem solid rgba(255,255,255,.3);
+    display: none;
+
+}
+
+.nav__content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 25px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav .logo > a{
+    color: #1D2228;
+    -webkit-text-stroke: thin #24B477;
+}
+nav .logo a:hover {
+    color: #24B477;
+}
+.logo::before {
+    content: "HILARY";
+    position: absolute;
+    font-weight: 600;
+    font-size: 30px;
+    width: 5%;
+    height: 40px;
+    color: #24B477;
+    border: 0.1px solid #24B477;
+    overflow: hidden;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color:#24B477;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #24B477;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  
+  
+
+
+
+.projects{
+    color: white;
+    display: flex;
+    align-items: left;
+    font-family: Tahoma, Verdana, sans-serif;
+    color: white;
+    font-size: 30px;
+    margin: 30px 0px 0px 10px;
+}
+
+.container{
+    width: 100%;
+    display: block;
+    margin:auto;
+    padding-top: 100px;
+    width: auto ;
+    height: 80%;
+    justify-content: center;
+
+}
+
+.content{
+    width: auto;
+}
+
+.content .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: Tahoma, Verdana, sans-serif;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.all_activities{
+    display: flex;
+    justify-content:space-around;
+    justify-items: center;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.activities{
+    border: 10px solid transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width:400px;
+    height:280px;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 15px;   
+    cursor: pointer;
+    background-color: #1D2228;
+    transition: transform .2s;
+}
+
+.actno{
+    color:#24B477 ;
+    font-size: 15px;
+    text-align: center;
+}
+
+.activities #first{
+    font-size: 1rem;
+    width: 300px;
+    padding: 3px;
+    height: 30px;
+    border: 1px solid #24B477;
+    border-radius: 5px;
+    background-color:#1D2228;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    
+}
+
+
+.activities #second{
+    font-size: 1rem;
+    width: 300px;
+    padding: 3px;
+    height: 30px;
+    border: 1px solid #24B477;
+    border-radius: 5px;
+    background-color:#1D2228;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+
+.activities .addbtn{
+    margin: 20px;
+    color: white;
+    font-size: 1rem;
+    padding: 3px 20px;
+    background-color: #1D2228;
+    border: 2px solid #24B477;
+    border-radius: 3px;
+
+     
+}
+
+.addbtn:hover{
+    background-color: #24B477;
+    color: white; 
+}
+
+#result{
+    color: white;
+    
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    body {
+        max-width: 100%; /* or any other value suitable for your design */
+      }
+    nav .fa-bars {
+        display: block;
+    }
+    nav .fa-times {
+        display: none;
+    }
+    nav {
+        background-color:  #1D2228;  
+    }
+   nav ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color:  #1D2228;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        
+    } 
+
+    nav #toggler:checked ~ ul {
+        left: 0;
+    }
+
+    #toggler:checked ~ .menu-icon .fa-bars {
+        display: none;
+    }
+    #toggler:checked ~.menu-icon .fa-times {
+        display: block;
+    }
+  
+   
+
+    ul li a {
+        font-size: 1.25rem;
+    }
+
+    .all_activities{
+        display: flex;
+        align-items: center;
+        flex-direction: column;;
+    }
+
+    .activities{
+        border: 10px solid transparent;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        width:300px;
+        height:280px;
+        text-align: center;
+        margin-top: 30px;
+        margin-right: 15px;
+        margin-left: 15px;   
+        cursor: pointer;
+        background-color: #1D2228;
+        transition: transform .2s;
+    }
+
+    .activities #first{
+        font-size: 1rem;
+        width: 280px;
+        padding: 3px;
+        height: 30px;
+        border: 1px solid #24B477;
+        border-radius: 5px;
+        background-color:#1D2228;
+        color: white;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    
+    .activities #second{
+        font-size: 1rem;
+        width: 280px;
+        padding: 3px;
+        height: 30px;
+        border: 1px solid #24B477;
+        border-radius: 5px;
+        background-color:#1D2228;
+        color: white;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+}
